@@ -1,13 +1,10 @@
 name: Ubuntu-Server
 on: 
-  workflow_dispatch:
-defaults:
-  run:
-    shell: bash
+  workflow_dispatch
 
 jobs:
   build:
-    runs-on: macos-latest
+    runs-on: windows-latest
     steps:
     - uses: fastai/workflows/ssh@master
       with:
